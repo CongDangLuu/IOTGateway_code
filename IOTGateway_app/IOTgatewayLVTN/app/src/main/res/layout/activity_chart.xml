@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    >
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/NhietdoChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        tools:ignore="MissingClass" />
+
+    <Button
+        android:id="@+id/BtnNDChart"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/Original"
+        android:text="temp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/BtnASChart"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/Original"
+        android:text="light"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/BtnDAChart"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginBottom="0dp"
+        android:backgroundTint="@color/Original"
+        android:text="Humi"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spnCategory"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/NhietdoChart"
+        android:layout_alignLeft="@+id/NhietdoChart"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vien"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:id="@+id/min"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/spnCategory"
+        android:layout_alignLeft="@+id/NhietdoChart"
+
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vien"
+        android:gravity="center_vertical"
+        android:text=" Min:"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/minvalue"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/min"
+        android:layout_alignBottom="@id/min"
+        android:layout_marginLeft="-2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+    <TextView
+        android:id="@+id/mintime"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/min"
+        android:layout_alignLeft="@+id/NhietdoChart"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/vien"
+        android:gravity="center_vertical"
+        android:text=" Time:"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/mintimeval"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/mintime"
+        android:layout_alignBottom="@id/mintime"
+        android:layout_marginLeft="-2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+    <TextView
+        android:id="@+id/max"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mintime"
+        android:layout_alignLeft="@+id/NhietdoChart"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/vien"
+        android:gravity="center_vertical"
+        android:text=" Max:"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/maxvalue"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/max"
+        android:layout_alignBottom="@id/max"
+        android:layout_marginLeft="-2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+    <TextView
+        android:id="@+id/maxtime"
+        android:layout_width="220dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/max"
+        android:layout_alignLeft="@+id/NhietdoChart"
+
+        android:layout_marginTop="10dp"
+        android:background="@drawable/vien"
+        android:gravity="center_vertical"
+        android:text=" Time:"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/maxtimeval"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/maxtime"
+        android:layout_alignBottom="@id/maxtime"
+        android:layout_marginLeft="-2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+
+</RelativeLayout>

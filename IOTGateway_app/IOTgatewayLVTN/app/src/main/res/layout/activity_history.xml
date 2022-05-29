@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:id="@+id/combobox"
+        >
+
+        <TextView
+            android:id="@+id/DVName"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@color/Original"
+            android:gravity="center"
+            android:text="Device Name"
+            android:layout_weight="1"
+
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spnCategoryHistory"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:spinnerMode="dropdown"
+            android:background="@color/Original"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:padding="5dip"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/headerLV"
+        android:layout_height="40dp"
+        android:weightSum="12"
+        android:orientation="horizontal"
+        android:layout_below="@id/combobox"
+         >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal"
+            android:layout_below="@id/combobox"
+            android:weightSum="5"
+            android:background="@drawable/nenxanh"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Hours:"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FFF"
+
+                />
+            <Spinner
+                android:id="@+id/spnCategoryHistoryHour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:spinnerMode="dropdown"
+
+                android:textSize="20sp"
+                android:gravity="center"
+                android:textColor="#FFF"
+                android:padding="5dip"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="ND"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:background="@drawable/nenxanh"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="DA"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:background="@drawable/nenxanh"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="AS"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:background="@drawable/nenxanh"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="TT"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:background="@drawable/nenxanh"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/LVData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/chuthich"
+        android:layout_below="@id/headerLV" />
+    <LinearLayout
+        android:baselineAligned="false"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/chuthich"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="    ND: Nhiệt độ (*C)"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="#2251DC"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="    DA: Độ ẩm (%)"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="#2251DC"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="    AS: Ánh sáng (%)"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:background="#2251DC"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="    TT: Trạng thái"
+                android:textColor="#F8F8F8"
+                android:textSize="20sp"
+                android:background="#2251DC"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

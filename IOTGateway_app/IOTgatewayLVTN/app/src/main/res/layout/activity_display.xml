@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/PrtView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3F51B5"
+        android:text="Protocol"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/DVName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/PrtView"
+        android:background="@drawable/nenxanh"
+
+        android:gravity="center"
+        android:text="Device Name"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TTView"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ASView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vien"
+        android:gravity="center_vertical"
+        android:text=" Status:"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/TTView1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/TTView"
+        android:layout_alignBottom="@id/TTView"
+        android:layout_marginLeft="-2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/NDView"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/DVName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="53dp"
+        android:background="@drawable/vien"
+        android:gravity="center_vertical"
+        android:text=" Temperature:"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+
+    <TextView
+        android:id="@+id/NDView1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/NDView"
+        android:layout_alignBottom="@id/NDView"
+        android:layout_marginLeft="-2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/DAView"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/NDView"
+        android:layout_alignStart="@+id/NDView"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/vien"
+        android:gravity="center_vertical"
+        android:text=" Humidity:"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/DAView1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/DAView"
+        android:layout_alignBottom="@id/DAView"
+        android:layout_marginLeft="-2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/ASView"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/DAView"
+        android:layout_alignStart="@+id/NDView"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vien"
+        android:gravity="center_vertical"
+        android:text=" Light:"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/ASView1"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/ASView"
+        android:layout_alignBottom="@id/ASView"
+        android:layout_marginLeft="-2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <Button
+        android:id="@+id/History_Btn"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TTView"
+
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+
+        android:backgroundTint="#2E49DD"
+        android:text="HISTORY"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Chart_Btn"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/TTView"
+
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="70dp"
+        android:backgroundTint="#2E49DD"
+        android:text="Chart"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ControlLable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/History_Btn"
+        android:layout_marginTop="40dp"
+        android:background="#00BCD4"
+
+        android:gravity="center"
+        android:text="Control"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/BtnOn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ControlLable"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="140dp"
+        android:backgroundTint="@color/Gray"
+        android:text="ON"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/BtnOff"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ControlLable"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/Gray"
+        android:text="OFF"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+</RelativeLayout>

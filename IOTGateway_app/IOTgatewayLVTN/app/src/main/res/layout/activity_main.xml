@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:weightSum="20"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextClock
+        android:background="#2196F3"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:format24Hour="E, d-M-yyyy kk:mm:ss"
+        android:format12Hour="E, d-M-yyyy kk:mm:ss"
+
+        android:gravity="center_vertical|end"
+
+        android:textSize="24sp"/>
+
+
+
+    <!--    device connected-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:weightSum="7">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="#4CAF50"
+            android:gravity="center_vertical"
+            android:text="   Connected devices:"
+            android:textColor="#000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/NoDevice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="#4CAF50"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+    <!--    Text "wifi device"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="  1. Wifi "
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:background="#00BCD4"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        />
+
+    <!--    2 button wifi-->
+    <LinearLayout
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnWif1"
+                android:text="1"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnWif2"
+                android:text="2"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnWif3"
+                android:text="3"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+
+                android:id="@+id/btnWif4"
+                android:text="4"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnWif5"
+                android:text="5"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <!--    Text "wifi device"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  2. Sub-GHz "
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:background="#00BCD4"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        />
+
+    <!--    2 button Sub-->
+    <LinearLayout
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="5">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSub1"
+                android:text="1"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+
+                android:id="@+id/btnSub2"
+                android:text="2"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnSub3"
+                android:text="3"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+
+                android:id="@+id/btnSub4"
+                android:text="4"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+
+                android:id="@+id/btnSub5"
+                android:text="5"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <!--    Text "Bluetooth device"-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="  3. Bluetooth "
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:background="#00BCD4"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        />
+
+    <!--    2 button BLUE-->
+    <LinearLayout
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBlu1"
+                android:layout_gravity="center"
+                android:text="1"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnBlu2"
+                android:gravity="center"
+
+                android:text="2"
+
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+
+                android:backgroundTint="@color/blue"
+                android:textSize="30sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

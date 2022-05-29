@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    android:weightSum="12"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/Thoigian1"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:text="Thời gian"
+        android:layout_marginTop="2dp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_weight="8"
+        android:weightSum="8"
+        >
+        <TextView
+            android:id="@+id/Nhietdo1"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="2"
+            android:text="ND"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/Doam1"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="2"
+            android:text="DA"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/Anhsang1"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="2"
+            android:text="AS"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/Trangthai1"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="2"
+            android:text="TT"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            />
+    </LinearLayout>
+</LinearLayout>
